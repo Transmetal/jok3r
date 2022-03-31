@@ -1,46 +1,7 @@
 .. raw:: html
 
-   <h1 align="center">
-
-.. image:: ./pictures/logo.png
-
-.. raw:: html
-
-   <br class="title">
-   Jok3r v3 beta
-   <br>
-
-.. image:: https://img.shields.io/badge/python-3.6-blue.svg
-    :target: https://www.python.org/downloads/release/python-366/
-    :alt: Python 3.6
-
-.. image:: https://readthedocs.org/projects/jok3r/badge/?version=latest
-   :target: https://jok3r.readthedocs.io/en/latest/
-   :alt: Documentation ReadTheDocs
-
-.. image:: https://img.shields.io/microbadger/image-size/koutto/jok3r.svg
-    :target: https://hub.docker.com/r/koutto/jok3r/
-    :alt: Docker Size
-
-.. image:: https://img.shields.io/docker/cloud/build/koutto/jok3r.svg
-    :alt: Docker Build Status
-
-.. raw:: html
-
    </h1>
    <h3 align="center">Network & Web Pentest Automation Framework</h3>
-   <p align="center"><a href="https://www.jok3r-framework.com/">www.jok3r-framework.com</a></p>
-
-**WARNING: Project is still in version 3 BETA. It is still under active development 
-and bugs might be present.**
-
-**Many tests are going on: see https://github.com/koutto/jok3r/blob/master/tests/TESTS.rst. 
-Ideas, bug reports, contributions are welcome !**
-
-
-.. contents:: 
-    :local:
-    :depth: 1
 
 =============
 Overview
@@ -97,35 +58,6 @@ Local Database & Reporting
 * **Access all Results**: All outputs from security checks, detected credentials and vulnerabilities are stored into the database and can be accessed easily.
 * **Reporting**: Generate full HTML reports with targets summary, web screenshots and all results from security testing.
 
-
-
-============
-Demos
-============
-
-* **Example 1: Scan a JAVA-RMI (JMX) service:** 
-
-.. image:: pictures/video-01.png
-   :target: https://www.youtube.com/watch?v=FlbeBj5FPtI
-
-* **Example 2: Scan a Joomla website:** 
-
-.. image:: pictures/video-02.png
-   :target: https://www.youtube.com/watch?v=z4cf_8EQ59Q
-
-
-============
-Architecture
-============
-.. image:: ./pictures/visio/architecture/jok3r-architecture.png
-    :alt: Jok3r architecture
-
-
-.. image:: ./pictures/visio/flowchart/jok3r-flow-chart.svg
-    :width: 700px
-    :alt: Jok3r flowchart
-
-
 ============
 Installation
 ============
@@ -133,16 +65,9 @@ Installation
 to worry about dependencies issues and installing the various hacking tools of the toolbox.
 Everything is tested from the Docker container available on Docker Hub !**
 
-.. image:: https://raw.githubusercontent.com/koutto/jok3r/master/pictures/docker-logo.png
-
 A Docker image is available on Docker Hub and automatically re-built at each update: 
 https://hub.docker.com/r/koutto/jok3r/. It is initially based on official Kali
 Linux Docker image (kalilinux/kali-linux-docker).
-
-.. image:: https://images.microbadger.com/badges/image/koutto/jok3r.svg
-   :target: https://microbadger.com/images/koutto/jok3r
-   :alt: Docker Image size
-
 
 1. **Pull Jok3r Docker Image:**
 
@@ -856,17 +781,3 @@ VNC (default 5900/tcp)
     | vuln-lookup     | vulnscan   | Vulnerability lookup in Vulners.com (NSE scripts) and exploit-db.com (lots of false positive !) | vuln-databases |
     | bruteforce-pass | bruteforce | Bruteforce VNC password                                                                         | patator        |
     +-----------------+------------+-------------------------------------------------------------------------------------------------+----------------+
-
-
-
-=============
-Known Issues
-=============
-
-* Docker image is huge ! (it actually contains lots of tools and dependencies... Will try to reduce size later)
-
-
-=============
-Changelog
-=============
-See `Changelog <https://github.com/koutto/jok3r/blob/master/CHANGELOG.rst>`_
